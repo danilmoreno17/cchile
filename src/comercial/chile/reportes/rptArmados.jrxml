@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptArmados" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6bdc4c63-50af-45a6-a729-d3008e47c575">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="strNumeracion2" class="java.lang.String">
+		<fieldDescription><![CDATA[strNumeracion2]]></fieldDescription>
+	</field>
+	<field name="strNumeracion1" class="java.lang.String">
+		<fieldDescription><![CDATA[strNumeracion1]]></fieldDescription>
+	</field>
+	<field name="strLocal" class="java.lang.String">
+		<fieldDescription><![CDATA[strLocal]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="512" splitType="Stretch"/>
+	</summary>
+</jasperReport>

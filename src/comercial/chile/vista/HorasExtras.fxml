@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comercial.chile.vista.HorasExtrasController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" text="REPORTES HORAS EXTRAS" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+            <Label text="Reporte Dobra: " AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="100.0" />
+            <Button fx:id="btnFCReporteDobra" layoutX="150.0" layoutY="95.0" mnemonicParsing="false" onAction="#BuscadorRD" text="..." AnchorPane.rightAnchor="420.0" AnchorPane.topAnchor="95.0" />
+            <Label fx:id="lblNAReporteDobra" layoutX="180.0" layoutY="100.0" text="NOMBRE DEL ARCHVO" AnchorPane.rightAnchor="266.0" AnchorPane.topAnchor="100.0" />
+            <TableView fx:id="tvHoraFaltante" editable="true" layoutX="65.0" layoutY="200.0" prefHeight="357.0" prefWidth="472.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+              <columns>
+                <TableColumn prefWidth="280.0" text="NOMBRES" />
+                <TableColumn minWidth="0.0" prefWidth="100.0" text="FECHA ENT." />
+                  <TableColumn prefWidth="100.0" text="FECHA  SAL." />
+              </columns>
+            </TableView>
+            <Button fx:id="btnCalcular" layoutX="263.0" layoutY="186.0" mnemonicParsing="false" onAction="#Calcular" text="CALCULAR" />
+            <Label fx:id="lblAviso" layoutX="79.0" layoutY="198.0" textFill="#fc0202" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" />
+            <Label layoutX="66.0" layoutY="134.0" text="Estado Cuenta: " />
+            <Button fx:id="btnFCEstadoCuenta" layoutX="156.0" layoutY="130.0" mnemonicParsing="false" onAction="#BuscadorEC" text="..." />
+            <Label fx:id="lblNAEstadoCuenta" layoutX="211.0" layoutY="134.0" text="NOMBRE DEL ARCHVO" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

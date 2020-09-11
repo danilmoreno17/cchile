@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comercial.chile.vista.ArmadosController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="200.0" layoutY="40.0" text="REPORTES DE ARMADOS" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="122.0" text="LOCAL:" AnchorPane.rightAnchor="450.0" />
+            <ComboBox fx:id="cbLocal" layoutX="200.0" layoutY="116.0" prefWidth="150.0" AnchorPane.leftAnchor="200.0" />
+            <Label layoutX="69.0" layoutY="186.0" text="PAGINAS:" AnchorPane.rightAnchor="450.0" />
+            <TextField fx:id="tfDesde" layoutX="270.0" layoutY="180.0" prefHeight="39.0" prefWidth="61.0" />
+            <TextField fx:id="tfHasta" layoutX="422.0" layoutY="180.0" prefHeight="39.0" prefWidth="59.0" />
+            <Label layoutX="347.0" layoutY="186.0" text="HASTA" />
+            <Label layoutX="197.0" layoutY="186.0" text="DESDE" AnchorPane.leftAnchor="200.0" />
+            <Button fx:id="btnGenerar" layoutX="201.0" layoutY="462.0" maxHeight="40.0" maxWidth="200.0" mnemonicParsing="false" onAction="#GenerarArmados" prefHeight="40.0" prefWidth="200.0" text="GENERAR ARMADOS" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
